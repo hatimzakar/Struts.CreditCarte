@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  
+
+
+<struts>
+
+<package name="default"  namespace="/" extends="struts-default">
+
+<!-- <default-action-ref  name="index" ></default-action-ref>
+<action name="index">
+<result>/form_validations.jsp</result>
+</action> -->
+
+
+
+
+
+<action name="facture" class="com.projet.web.FactureAction" method="index">
+<!-- <result name="success">/Facture.jsp</result> -->
+<result name="success">/facture2.jsp</result>
+</action>
+
+
+<action name="acceuil" class="com.projet.web.FactureAction" method="acceuil">
+<result name="success">/form_validations.jsp</result>
+</action>
+
+
+
+<action name="AjouterFacture" class="com.projet.web.FactureAction" method="AjouterFacture">  
+<!-- <result name="success">/Facture.jsp</result>   -->
+<result name="success">/facture2.jsp</result>
+
+<result name="failure">/error.jsp</result>  
+</action>  
+
+<action name="editFacture" class="com.projet.web.FactureAction" method="editFacture">  
+<!-- <result name="success">/Facture.jsp</result>  -->
+<result name="success">/facture2.jsp</result> 
+
+<result name="failure">/error.jsp</result>  
+
+</action>  
+
+
+<action name="delete" class="com.projet.web.FactureAction" method="Delete">  
+<!-- <result name="success">/Facture.jsp</result>   -->
+<result name="success">/facture2.jsp</result>
+<result name="failure">/error.jsp</result>  
+</action>  
+
+</package>
+
+
+
+
+<package name="CarteCredit" extends="struts-default">
+
+<action name="Carte" class="com.projet.web.CarteCreditAction" method="index">  
+<!-- <result name="success">/CarteCredit.jsp</result>  -->
+<result name="success">/Carte.jsp</result>  
+
+</action>  
+
+
+
+<action name="AjouterCarte" class="com.projet.web.CarteCreditAction" method="AjouterCarteCredit">  
+<!-- <result name="success">/CarteCredit.jsp</result>   -->
+<result name="success">/Carte.jsp</result>
+<result name="failure">/error.jsp</result> 
+
+</action>  
+
+
+<action name="deleteCarte" class="com.projet.web.CarteCreditAction" method="Delete">  
+<!-- <result name="success">/CarteCredit.jsp</result>  -->
+<result name="success">/Carte.jsp</result> 
+<result name="failure">/error.jsp</result>  
+</action>  
+
+<action name="editCarte" class="com.projet.web.CarteCreditAction" method="edit">  
+<!-- <result name="success">/CarteCredit.jsp</result>  --> 
+<result name="success">/Carte.jsp</result>
+<result name="failure">/error.jsp</result>  
+</action>  
+
+
+
+</package>
+
+
+<package name="Transaction" extends="struts-default">
+
+<action name="Trans" class="com.projet.web.TransactionAction" method="index">  
+<result name="success">/Trans.jsp</result>  
+</action>
+
+
+<action name="Transaction" class="com.projet.web.TransactionAction" method="Transaction">  
+<result name="success">/Trans.jsp</result>  
+<result name="failure">/error.jsp</result> 
+
+</action>  
+
+
+
+
+
+
+</package>
+
+
+<package name="test" extends="struts-default">
+
+<action name="afficher" class="com.projet.web.formAction" method="Afficher">  
+<result name="success">/welcome.jsp</result>  
+</action>
+
+
+
+
+
+
+
+
+
+
+
+
+</package>
+
+
+
+
+
+
+<!-- <action name="AjouterFacture" class="com.projet.web.FactureAction" method="AjouterFacture">  
+<result name="success">/Facture.jsp</result>  
+<result name="failure">/error.jsp</result>  
+</action>  
+
+
+
+
+<action name="delete" class="com.projet.web.FactureAction" method="Delete">  
+<result name="success">/Facture.jsp</result>  
+<result name="failure">/error.jsp</result>  
+</action>   -->
+
+
+
+</struts>
+
+ <!-- <package name="AjouterFacture" extends="struts-default">
+<action name="AjouterFacture" class="com.projet.web.FactureAction" method="AjouterFacture">  
+<result name="success">/Facture.jsp</result>  
+<result name="failure">/error.jsp</result>  
+</action>
+
+</package> -->
+
+
+
+
